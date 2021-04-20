@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "21d13624-768e-4422-82ef-c53336fdafeb",
+		"name": "Shipmentapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/shipments/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category_type",
+							"value": "App\\Models\\Car",
+							"type": "text"
+						},
+						{
+							"key": "pickup_location_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "pickup_date",
+							"value": "2015-12-12",
+							"type": "text"
+						},
+						{
+							"key": "delivery_date",
+							"value": "2015-12-12",
+							"type": "text"
+						},
+						{
+							"key": "delivery_location_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "shipment_status_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test23",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/shipments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shipments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/shipments/2/bids/accept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "driver_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "55",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/shipments/2/bids/accept",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shipments",
+						"2",
+						"bids",
+						"accept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/shipments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category_type",
+							"value": "App\\Models\\Car",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "190.65",
+							"type": "text"
+						},
+						{
+							"key": "pickup_city",
+							"value": "Beograd",
+							"type": "text"
+						},
+						{
+							"key": "delivery_city",
+							"value": "Subotica",
+							"type": "text"
+						},
+						{
+							"key": "pickup_date",
+							"value": "2015-10-10",
+							"type": "text"
+						},
+						{
+							"key": "delivery_date",
+							"value": "2017-10-10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/shipments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shipments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
