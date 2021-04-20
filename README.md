@@ -84,7 +84,7 @@ amount:55
 This route accepts driver_id and amount and validates the request. If successfull, a list of bids is returned. Otherwise, proper messages are displayed.
 
 ### Retracting bid
-Route: POST - http://127.0.0.1:8000/api/shipments/1/bids/retract
+Route: POST - http://127.0.0.1:8000/api/shipments/1/bids/retract  
 Postman body sample:
 ```
 driver_id:1
@@ -93,7 +93,7 @@ This route retracts the drivers bid so he could make another one.
 
 
 ### Accepting bid
-Route: POST - http://127.0.0.1:8000/api/shipments/1/bids/accept
+Route: POST - http://127.0.0.1:8000/api/shipments/1/bids/accept  
 Postman body sample:
 ```
 driver_id:1
